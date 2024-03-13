@@ -13,5 +13,10 @@ console.log(params);
  * Contoh penggunaan DOM di dalam class
  * */
 const app = new App();
+// 
+app.loadButton.addEventListener('click', () => {
+    app.clear()
+    app.loadFilter().then(app.run());
+})
 
 app.init().then(app.run);

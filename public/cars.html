@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="scripts/nice-select2/dist/css/nice-select2.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -22,20 +22,20 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container">
-                <a href="index.html"><img class="navbar-brand" src="images/logo.png" alt="" style="width: 100px; height: 34px;"></a>
-                <button class="btn btn-white navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span
+                <a href="index.html"></a><a class="navbar-brand" href="index.html">BCR</a>
+                <button class="btn btn-success d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span
                         class="navbar-toggler-icon"></span></button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title fw-bold" style="margin-left: 20px;" id="offcanvasRightLabel">BCR</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body justify-content-end">
-                        <ul class="navbar-nav mr-2 mb-lg-0">
-                            <li class="nav-item mx-3 my-1"><a class="nav-link" href="#ourservices">Our Sevices</a></li>
-                            <li class="nav-item mx-3 my-1"><a class="nav-link ml" href="#whyus">Why Us</a></li>
-                            <li class="nav-item mx-3 my-1"><a class="nav-link" href="#testimonial">Testimonial</a></li>
-                            <li class="nav-item mx-3 my-1"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item "><a class="nav-link active" href="#ourservices">Our Sevices</a></li>
+                            <li class="nav-item "><a class="nav-link" href="#whyus">Why Us</a></li>
+                            <li class="nav-item "><a class="nav-link" href="#testimonial">Testimonial</a></li>
+                            <li class="nav-item "><a class="nav-link" href="#faq">FAQ</a></li>
                         </ul><button class="btn btn-register mx-3 my-1">Register</button>
                     </div>
                 </div>
@@ -48,10 +48,10 @@
                     <!-- <div class="col-lg-1 col-xxl-1 col-md-1">
                     </div> -->
                     <div class="col-lg-5  mx-lg-5 col-xl-5 col-xxl-5 mx-md-0 " style="padding-top: 100px;">
-                        <h2 class="fw-bold" style="padding-right: 10px;">Sewa & Rental Mobil Terbaik di kawasan Depok</h2>
+                        <h2 class="fw-bold" style="padding-right: 10px;">Sewa & Rental Mobil Terbaik di kawasan Kota Bekasi</h2>
                         <p style="padding-right: 40px;">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam. </p><button class="btn btn-utama">Mulai Sewa Mobil</button>
                     </div>
-                    <div class="col-lg-5 col-xl-6 col-xxl-6 mt-lg-3" style="padding-top: 50px; "><img class="" width="100%" src="images/Mercedes Car EQC 300kW Edition - 900x598 1.png" alt=""></div>
+                    <div class="col-lg-5 col-xl-6 col-xxl-6 mt-lg-3" style="padding-top: 50px; "><img class="" width="100%" src="images/img_car.png" alt=""></div>
                 </div>
             </div>
         </section>
@@ -97,7 +97,9 @@
                             </div>
                         </div>
                         <div class="col-lg-2 col-xl-auto col-md-2  pt-4">
-                            <button class="btn btn-utama" id="load-btn">Cari Mobil</button>
+                            <button class="btn btn-utama" id="load-btn" >Cari Mobil</button>
+                            <!-- class creates loader -->
+                            <div class= "loader"></div>
                         </div>
                     </div>
                 </div>
